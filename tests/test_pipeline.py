@@ -225,10 +225,17 @@ def test_sentiment_star_mapping_positive(monkeypatch):
 def test_sentiment_analyzer_rejects_empty_text(monkeypatch):
     from src import sentiment as sentiment_module
 
+    class FakeModel:
+        def to(self, device):
+            return self
+
+        def eval(self):
+            return self
+
     monkeypatch.setattr(
         sentiment_module.AutoModelForSequenceClassification,
         "from_pretrained",
-        lambda *a, **k: object(),
+        lambda *a, **k: FakeModel(),
     )
     monkeypatch.setattr(
         sentiment_module.AutoTokenizer, "from_pretrained", lambda *a, **k: object()
