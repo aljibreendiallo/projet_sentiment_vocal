@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🎙️ Détection Automatique de Sentiment dans des Appels Vocaux
 
 **Module :** Deep Learning 2 — Dakar Institute of Technology (DIT)
@@ -47,6 +46,7 @@ projet_sentiment_vocal/
 ├── docker-compose.yml         # Lance API + Gradio ensemble
 ├── .github/workflows/ci.yml   # CI : exécution automatique des tests
 ├── requirements.txt
+├── pytests.ini
 └── README.md
 ```
 
