@@ -1,0 +1,31 @@
+# --- Deep Learning / Transformers ---
+torch>=2.1.0
+transformers>=4.38.0
+
+# --- Audio ---
+librosa>=0.10.1
+soundfile>=0.12.1
+ffmpeg-python>=0.2.0
+
+# --- API ---
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+python-multipart>=0.0.9
+
+# --- Interface ---
+gradio>=4.19.0
+
+# --- Client HTTP (exemples) ---
+requests>=2.31.0
+
+# --- Évaluation (bonus) ---
+jiwer>=3.0.3
+scikit-learn>=1.4.0
+
+# --- Tests ---
+pytest>=8.0.0
+pytest-cov>=4.1.0
+
+# --- Utilitaires ---
+numpy>=1.26.0
+python-dotenv>=1.0.1

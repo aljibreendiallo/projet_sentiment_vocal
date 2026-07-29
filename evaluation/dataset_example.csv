@@ -1,0 +1,4 @@
+audio_path,reference_transcript,true_sentiment
+tests/audio_samples/exemple_positif.wav,je suis très satisfait de votre service merci beaucoup,positif
+tests/audio_samples/exemple_neutre.wav,je souhaite connaître le statut de ma commande,neutre
+tests/audio_samples/exemple_negatif.wav,je suis vraiment mécontent de la qualité du produit reçu,négatif

@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  api:
+    build: .
+    container_name: sentiment_vocal_api
+    command: uvicorn api.main:app --host 0.0.0.0 --port 8000
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./logs:/app/logs
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    restart: unless-stopped
+
+  gradio:
+    build: .
+    container_name: sentiment_vocal_gradio
+    command: python app_gradio.py
+    ports:
+      - "7860:7860"
+    volumes:
+      - ./logs:/app/logs
+    restart: unless-stopped

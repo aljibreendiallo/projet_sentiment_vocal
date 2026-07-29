@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+logs/
+*.log
+
+# Modèles / cache Hugging Face
+.cache/
+*.bin
+*.pt
+*.safetensors
+
+# Env
+.env
+
+# OS
+.DS_Store
