@@ -184,8 +184,6 @@ Le pipeline lève des exceptions métier dédiées (`src/utils.py`), traduites p
 
 ## 9. Auteur
 
-Alpha Oumar — Master 2 AI/Deep Learning, Dakar Institute of Technology (DIT)
-Projet d'examen — Module Deep Learning 2 — 2026
+Alpha Oumar DIALLO  Master 2 AI/Deep Learning, Dakar Institute of Technology (DIT)
+Projet d'examen — Module_Deep_Learning_2 2026
 =======
-# projet_sentiment_vocal
->>>>>>> 1b279b259afd2c5756a1fff4550a2e275f151b3c
