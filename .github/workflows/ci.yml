@@ -37,6 +37,8 @@ jobs:
           flake8 src/ api/ --max-line-length=100 --extend-ignore=E203,W503 || true
 
       - name: Exécution des tests unitaires
+        env:
+          PYTHONPATH: ${{ github.workspace }}/src
         run: |
           pytest tests/ -v --cov=src --cov-report=term-missing
 
