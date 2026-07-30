@@ -4,9 +4,9 @@ Ce dossier contient 3 fichiers de test, un par classe de sentiment attendue :
 
 | Fichier | Sentiment attendu |
 |---|---|
-| `exemple_positif.wav` | positif |
-| `exemple_neutre.wav` | neutre |
-| `exemple_negatif.wav` | négatif |
+| `exemple_audio_positif.wav` | positif |
+| `exemple_audio_neutre.wav` | neutre |
+| `exemple_audio_negatif.wav` | négatif |
 
 ⚠️ **Important** : les fichiers fournis par défaut dans ce dépôt sont des
 **tonalités synthétiques** (générées par script, sans parole) servant
