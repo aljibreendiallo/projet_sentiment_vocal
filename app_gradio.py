@@ -51,7 +51,7 @@ def analyze_audio(audio_file):
         return "", "", 0.0, f"❌ Erreur inattendue : {exc}"
 
 
-with gr.Blocks(title="Détection de Sentiment Vocal - DIT") as demo:
+with gr.Blocks(title="Détection de Sentiment Vocal") as demo:
     gr.Markdown(
         f"""
         # 🎙️ Détection Automatique de Sentiment dans des Appels Vocaux
@@ -92,9 +92,9 @@ with gr.Blocks(title="Détection de Sentiment Vocal - DIT") as demo:
 
     gr.Examples(
         examples=[
-            "tests/audio_samples/exemple_positif.wav",
-            "tests/audio_samples/exemple_neutre.wav",
-            "tests/audio_samples/exemple_negatif.wav",
+            "tests/audio_samples/exemple_audio_positif.mp3",
+            "tests/audio_samples/exemple_audio_neutre.mp3",
+            "tests/audio_samples/exemple_audio_negatif.mp3",
         ],
         inputs=audio_input,
         label="Exemples de démonstration (un par classe de sentiment)",
