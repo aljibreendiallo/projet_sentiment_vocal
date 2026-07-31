@@ -61,7 +61,7 @@ projet_sentiment_vocal/
 | ASR | `jonatasgrosman/wav2vec2-large-xlsr-53-french` | https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-french | Wav2Vec2 XLSR-53 **fine-tuné spécifiquement sur le français**, baseline ASR FR la plus utilisée sur Hugging Face, bon compromis qualité/disponibilité pour un projet académique. |
 | Sentiment | `nlptown/bert-base-multilingual-uncased-sentiment` | https://huggingface.co/nlptown/bert-base-multilingual-uncased-sentiment | BERT multilingue fine-tuné sur des avis clients (notation 1 à 5 étoiles), couvre nativement le français. La sortie 5 classes est **remappée** vers les 3 classes métier : `1-2★ → négatif`, `3★ → neutre`, `4-5★ → positif`. |
 
-**Alternative envisagée et écartée :** `tblard/tf-allocine` (CamemBERT fine-tuné, binaire positif/négatif) — écarté car il ne fournit pas nativement de classe neutre, requise par le cahier des charges.
+**Alternative envisagée et écartée :** `tblard/tf-allocine` (CamemBERT fine-tuné, binaire positif/négatif) est écarté car il ne fournit pas nativement de classe neutre, requise par le cahier des charges.
 
 ---
 
