@@ -102,9 +102,9 @@ Documentation interactive Swagger : http://localhost:8000/docs
 
 Appel de test :
 ```bash
-./examples/curl_example.sh tests/audio_samples/exemple_positif.wav
+./examples/curl_example.sh tests/audio_samples/exemple_audio_positif.mp3
 # ou
-python examples/call_api.py tests/audio_samples/exemple_positif.wav
+python examples/call_api.py tests/audio_samples/exemple_audio_positif.mp3
 ```
 
 Réponse type :
