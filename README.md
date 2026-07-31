@@ -1,6 +1,8 @@
 # 🎙️ Détection Automatique de Sentiment dans des Appels Vocaux
 
-**Module :** Deep Learning 2 — Dakar Institute of Technology (DIT)
+## Alpha Oumar DIALLO
+
+**Examen :** Deep Learning 2 - Dakar Institute of Technology (DIT)
 **Pipeline :** Audio → ASR (Wav2Vec 2.0) → Analyse de sentiment (BERT) → JSON
 
 ---
@@ -168,7 +170,7 @@ Le pipeline lève des exceptions métier dédiées (`src/utils.py`), traduites p
 
 - Le modèle ASR n'a pas été évalué sur des données d'appels téléphoniques réels (bruit de fond, qualité GSM) : les performances peuvent être inférieures à celles annoncées sur des benchmarks propres (Common Voice).
 - Le mapping 5 étoiles → 3 classes de sentiment est une **heuristique** ; il n'a pas été calibré/validé sur un jeu de données d'appels clients réel.
-- Durée maximale de traitement fixée à 5 minutes par fichier, conformément au cahier des charges — au-delà, le fichier est rejeté plutôt que découpé.
+- Durée maximale de traitement fixée à 5 minutes par fichier, conformément à l'énoncé de l'examen — au-delà, le fichier est rejeté plutôt que découpé.
 - Les 3 fichiers de démonstration fournis par défaut dans `tests/audio_samples/` sont des **tonalités synthétiques** de test (voir `tests/audio_samples/README.md`) et doivent être remplacés par de vrais enregistrements vocaux pour une démonstration métier probante.
 - Pas de gestion de la diarisation (plusieurs locuteurs) : le pipeline traite l'audio comme un flux mono-locuteur.
 
@@ -182,8 +184,7 @@ Le pipeline lève des exceptions métier dédiées (`src/utils.py`), traduites p
 
 ---
 
-## 9. Auteur
+## 9. Demo
 
-Alpha Oumar DIALLO  Master 2 AI/Deep Learning, Dakar Institute of Technology (DIT)
-Projet d'examen — Module_Deep_Learning_2 2026
-=======
+L'application est déployé sur le serveur de l'entreprise où je travaille et est accessible sur ce lien : https://alpha-dl-detection-sentiment.codeangel.pro/ 
+
