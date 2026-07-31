@@ -184,7 +184,7 @@ Le pipeline lève des exceptions métier dédiées (`src/utils.py`), traduites p
 
 ---
 
-## 9. Demo
+## 9. Demo avec interface gradio
 
 L'application est déployé sur le serveur de l'entreprise où je travaille et est accessible sur ce lien : https://alpha-dl-detection-sentiment.codeangel.pro/ 
 
